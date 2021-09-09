@@ -1,0 +1,20 @@
+{
+    "font.family": "serif",
+    "font.serif": ["Computer Modern Roman"],
+    "font.size" : 13,
+    "legend.fontsize": 10,
+    "xtick.labelsize" : 11,
+    "ytick.labelsize" : 11,
+    "legend.loc": "lower left",
+    "text.usetex": true,
+    "pgf.rcfonts": false,
+    "lines.linewidth": 1,
+    "markers.fillstyle": "none",
+    "axes.grid": true,
+    "axes.grid.axis": "x",
+    "grid.linewidth": 1,
+    "grid.linestyle": ":",
+    "grid.alpha": 0.6,
+    "figure.dpi": 80,
+    "figure.figsize": [5.3, 2]
+}

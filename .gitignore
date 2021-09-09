@@ -1,0 +1,10 @@
+/target
+/lib
+/python/**/__pycache__/
+*.swo
+*.swp
+Cargo.lock
+.vscode
+.idea
+runs
+*_results.pdf
