@@ -14,7 +14,7 @@ crate-type = ["cdylib"]
 crossbeam = "0.8.0"
 
 [dependencies.pyo3]
-version = "*"
+version = "0.20"
 
 [features]
 extension-module = ["pyo3/extension-module"]
