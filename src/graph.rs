@@ -70,7 +70,7 @@ impl KyberRefINTTGraph {
     fn add_threaded_var_node(
         &mut self,
         name: String,
-        prior: Option<HashMap<i16, f64>>,
+        prior: HashMap<i16, f64>,
         val_min: i16,
         val_max: i16,
         self_start: bool,
@@ -78,7 +78,7 @@ impl KyberRefINTTGraph {
         let mut n = VariableNode::new();
 
         // https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html
-        if let Some(prior) = prior {
+        //if let Some(prior) = prior {
             let mut prior_msg = KyberMsg::new_with_size(val_max as usize, (-val_min) as usize);
             for (v, p) in prior {
                 prior_msg.insert(v, p);
@@ -88,7 +88,7 @@ impl KyberRefINTTGraph {
                 .map_err(|e| KyberRefINTTGraphError::from_bp(e))?;
             n.set_prior(&prior_msg)
                 .map_err(|e| KyberRefINTTGraphError::from_bp(e))?;
-        }
+        //}
         if self_start {
             n.set_input_need(InputNeed::AlwaysExceptFirst);
         } else {
